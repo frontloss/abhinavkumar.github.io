@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Professional profile</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+	<div class="profile-main">
+		<div class="profile-header">
+			<div class="user-detail">
+				<div class="user-image">
+					<img src="profile_pic.jpg">
+				</div>
+				<div class="user-data">
+					<h2>Abhinav Kumar</h2>
+					<span class="post-label">Space Enthusiast</span>
+					<span class="post-label">Critical Thinker</span>
+					<span class="post-label">Avid Reader</span>
+					<p>Subject Matter Expert at <strong>Chegg</strong><br>
+					<i class="fa fa-map-marker" aria-hidden="true"></i>  Prayagraj, Uttar Pradesh, India
+					</p>
+				</div>
+				<div class="social-icons">
+					<i class="fa fa-facebook"></i>
+					<i class="fa fa-twitter"></i>
+					<i class="fa fa-linkedin"></i>
+					<i class="fa fa-google"></i>
+					<i class="fa fa-instagram"></i>
+					<a href="#" type="button" class="msg-btn"><i class="fa fa-envelope-o" aria-hidden="true"></i>Send Message</a>
+				</div>
+			</div>
+			<div class="tab-panel-main">
+				<ul class="tabs">
+					<li class="tab-link current" data-tab="Basic-detail">Basic Detail</li>
+					<li class="tab-link" data-tab="Edu-detail">Educational Detail</li>
+					<li class="tab-link" data-tab="Portfolio">Portfolio</li>
+				</ul>
+				<div id="Basic-detail" class="tab-content current">
+					<div class="skill-box">
+					  <ul>
+						<li><strong>My Core Skills:</strong></li>
+						<li>MACHINE LEARNING<i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></li>
+						<li>FRONT-END DEVELOPER<i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></li>
+						<li>COMPUTER VISION<i class="fa fa-star" aria-hidden="true"></i></li>
+					  </ul>		
+					</div>
+					<div class="bio-box">
+						<div class="heading">
+							<p>Professional Bio
+							<label>1 Year Experience</label>
+							</p>
+						</div>
+						<div class="desc">
+							A strong data driven professional leveraging tools to extract actionable insights from the infinite sea of data. 
+							Bounded by strong moral ethics and social responsibilities, working on attaining self-improvement, financial independence 
+							in the long run to focus on my passion and live life helping towards a social cause.
+						</div>
+					</div>
+					<div class="detail-box">
+						<p>Detail</p>
+						<ul class="ul-first">
+							<li>Birth date</li>
+							<li>City</li>
+							<li>Country</li>
+							<li>Contact No</li>
+						</ul>
+						<ul class="ul-second">
+							<li>19 March 1998</li>
+							<li>Prayaraj</li>
+							<li>India</li>
+							<li>8688069658</li>
+						</ul>
+					</div>
+				</div>
+				<div id="Edu-detail" class="tab-content">
+					<div class="Edu-box-main">
+						 <h2><i class="fa fa-graduation-cap" aria-hidden="true"></i> Education</h2>
+						 <div class="Edu-box">
+						 	<h5><span>B.tech</span> <br>
+						 		2015 - 2019 | NIT Rourkela</h5>
+						 	<p>Graduated first class in the field of Electronics & Instrumentation with CGPA of 7.64</p>
+						 </div>
+						 <div class="Edu-box">
+						 	<h5><span>Data Analyst</span> <br>
+						 		2019 - 2020 | Capgemini</h5>
+						 	<p>Worked in a team of 20 employing my valuable skills in SQL, Machine Learning Model Deployment, 
+							   Tensorflow, OpenCV to design a workable application for the client. 
+							</p>
+						 </div>
+					</div>
+				</div>
+				<div id="Portfolio" class="tab-content">
+					<div class="portfolio-box">
+						<div class="portfolio-img-box">
+							<h3>Machine Learning</h3>
+							<img src="ml_logo.png">
+						</div>
+						<div class="portfolio-img-box">
+							<h3>Web development</h3>
+							<img src="web_dev_logo.jpg">
+						</div>
+						<div class="portfolio-img-box">
+							<h3>Deep Learning</h3>
+							<img src="dl_logo.png">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div style="clear: both;"></div>
+		<div class="footer">
+			<p><strong>My Badges</strong></p><br>
+			<div class="footer-box"><i class="fa fa-facebook"></i></div>
+			<div class="footer-box"><i class="fa fa-twitter"></i></div>
+			<div class="footer-box"><i class="fa fa-linkedin"></i></div>
+			<div class="footer-box"><i class="fa fa-google"></i></div>
+			<div class="footer-box"><i class="fa fa-instagram"></i></div>
+		</div>
+	</div>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('ul.tabs li').click(function(){
+			var tab_id = $(this).attr('data-tab');
+
+			$('ul.tabs li').removeClass('current');
+			$('.tab-content').removeClass('current');
+
+			$(this).addClass('current');
+			$("#"+tab_id).addClass('current');
+		});
+	});
+</script>
+</body>
+</html>
